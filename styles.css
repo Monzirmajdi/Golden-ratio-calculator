@@ -117,3 +117,21 @@ button:hover {
 .copy-notification.error {
     background-color: #f44336;
 }
+/* أضف هذا في نهاية الملف */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+footer a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

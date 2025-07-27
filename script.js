@@ -30,7 +30,14 @@ function calculateSeries() {
         copyBtn.className = 'copy-btn';
         copyBtn.innerHTML = '<i class="fas fa-copy"></i>';
         copyBtn.title = 'Copy to clipboard';
-        copyBtn.addEventListener('click', () => copyToClipboard(currentValue));
+        
+        // Store the current value as a data attribute
+        copyBtn.dataset.value = currentValue;
+        
+        // Add click event directly to each button
+        copyBtn.addEventListener('click', function() {
+            copyToClipboard(this.dataset.value);
+        });
         
         resultItem.appendChild(resultValue);
         resultItem.appendChild(copyBtn);
@@ -44,7 +51,7 @@ function copyToClipboard(value) {
     navigator.clipboard.writeText(value.toString())
         .then(() => {
             // Optional: Show copied feedback
-            alert('Copied: ' + value.toFixed(4));
+            alert('Copied: ' + parseFloat(value).toFixed(4));
         })
         .catch(err => {
             console.error('Failed to copy: ', err);

@@ -261,3 +261,12 @@ footer a:hover {
     margin-top: 10px;
     border-radius: 2px;
 }
+
+.download-count {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+
+

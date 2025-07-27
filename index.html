@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Ratio Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Golden Ratio Calculator</h1>
+        <p>Calculates φ (1.618) multiplication series</p>
+        
+        <div class="input-group">
+            <label for="baseNumber">Base Number:</label>
+            <input type="number" id="baseNumber" placeholder="Enter a number" step="any">
+        </div>
+        
+        <div class="input-group">
+            <label for="iterations">Iterations:</label>
+            <input type="number" id="iterations" placeholder="Repeat times" min="1" value="5">
+        </div>
+        
+        <button id="calculateBtn">Calculate φ Series</button>
+        
+        <div id="resultsContainer">
+            <!-- Results will appear here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

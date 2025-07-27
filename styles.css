@@ -135,3 +135,43 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/* أضف هذا في نهاية الملف */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.social-links {
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: #d4af37;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #d4af37;
+    color: white;
+    transform: translateY(-3px);
+}
+
+footer a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

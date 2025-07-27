@@ -77,3 +77,16 @@ function showNotification(message, isError = false) {
 // أضف هذا في نهاية الملف
 // Update copyright year automatically
 document.getElementById('year').textContent = new Date().getFullYear();
+// أضف هذا في script.js
+document.querySelector('.download-btn').addEventListener('click', function() {
+    const progressBar = document.createElement('div');
+    progressBar.className = 'progress-bar';
+    this.parentElement.appendChild(progressBar);
+    
+    let width = 0;
+    const interval = setInterval(() => {
+        if (width >= 100) clearInterval(interval);
+        progressBar.style.width = width + '%';
+        width++;
+    }, 50);
+});

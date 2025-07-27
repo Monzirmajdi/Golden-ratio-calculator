@@ -74,3 +74,6 @@ function showNotification(message, isError = false) {
         }, 300);
     }, 2000);
 }
+// أضف هذا في نهاية الملف
+// Update copyright year automatically
+document.getElementById('year').textContent = new Date().getFullYear();

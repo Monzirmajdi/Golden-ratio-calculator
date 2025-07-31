@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1>Golden Ratio Calculator</h1>
-        <p>Calculates φ (1.618) multiplication series</p>
+        <p>Calculates φ (1.618) multiplication and division series</p>
         
         <div class="input-group">
             <label for="baseNumber">Base Number:</label>
@@ -20,6 +20,13 @@
             <label for="iterations">Iterations:</label>
             <input type="number" id="iterations" placeholder="Repeat times" min="1" value="5">
         </div>
+        <div class="input-group">
+            <label for="calculationType">Calculation Type:</label>
+            <select id="calculationType">
+                <option value="ascending">Ascending (Multiply by φ)</option>
+                <option value="descending">Descending (Divide by φ)</option>
+            </select>
+        </div>
         
         <button id="calculateBtn">Calculate φ Series</button>
         
@@ -27,14 +34,44 @@
             <!-- Results will appear here -->
         </div>
     </div>
-<div class="download-container">
-    <div class="download-card">
-        <i class="fas fa-mobile-alt download-icon"></i>
-        <h3>Offline Android Version zip file</h3>
-        <p>Get the full experience on your mobile device</p>
-        <a href="download/Golden Ratio Calculator-v1.0.zip" class="download-btn">
-            <i class="fas fa-download"></i> DOWNLOAD FOR ANDROID
-        </a>
+    <div class="download-container">
+        <div class="download-card">
+            <i class="fas fa-mobile-alt download-icon"></i>
+            <h3>Offline Android Version zip file</h3>
+            <p>Get the full experience on your mobile device</p>
+            <a href="download/Golden Ratio Calculator-v1.0.zip" class="download-btn">
+                <i class="fas fa-download"></i> DOWNLOAD FOR ANDROID
+            </a>
+            <div class="file-info">
+                <span class="version">Version 1.0</span>
+                <span class="size">18.55 MB</span>
+            </div>
+            <div class="download-count">
+                Downloads: <span id="downloadCountDisplay">0</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="social-links">
+            <a href="https://monzirmajdi.github.io/Portfolio1/" target="_blank" title="Portfolio">
+                <i class="fas fa-briefcase"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/monzirgraphix" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/monzir_magdi?igsh=Z25paDEybHVzeWM=" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1Ak6AJooBV/?mibextid=qi2Omg" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+        Copyright© <span id="year"></span> <a href="#" target="_blank">MonzirGraphix</a>.All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>        </a>
         <div class="file-info">
             <span class="version">Version 1.0</span>
             <span class="size">18.55 MB</span>

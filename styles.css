@@ -37,12 +37,18 @@ label {
     font-weight: bold;
 }
 
-input {
+input, select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 16px;
+}
+
+select:focus {
+    border-color: #d4af37;
+    outline: none;
 }
 
 button {
@@ -117,25 +123,7 @@ button:hover {
 .copy-notification.error {
     background-color: #f44336;
 }
-/* أضف هذا في نهاية الملف */
-footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    color: #666;
-    font-size: 14px;
-}
 
-footer a {
-    color: #d4af37;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-/* أضف هذا في نهاية الملف */
 footer {
     text-align: center;
     margin-top: 40px;
@@ -175,7 +163,7 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-/* أنماط قسم التحميل */
+
 .download-container {
     margin: 40px auto;
     max-width: 500px;
@@ -244,6 +232,7 @@ footer a:hover {
     content: "•";
     margin-right: 8px;
 }
+
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -253,6 +242,7 @@ footer a:hover {
 .download-btn {
     animation: pulse 2s infinite;
 }
+
 .progress-bar {
     height: 4px;
     background: #d4af37;
@@ -268,5 +258,3 @@ footer a:hover {
     color: #666;
     font-weight: bold;
 }
-
-

@@ -1,8 +1,8 @@
 // GitHub Repository Configuration
 const REPO_OWNER = 'Monzirmajdi';
-const REPO_NAME = 'golden-ratio-calculator';
+const REPO_NAME = 'Golden-ratio-calculator';
 const FILE_PATH = 'downloads.json';
-const GITHUB_TOKEN = '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';
+const GITHUB_TOKEN = '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';
 
 // Main Calculator Functionality
 document.getElementById("calculateBtn").addEventListener("click", calculateSeries);
